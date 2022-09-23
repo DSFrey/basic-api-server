@@ -5,11 +5,13 @@ const { Sequelize, DataTypes } = require('sequelize');
 const cymbalSchema = require('./cymbal.schema');
 const stickSchema = require('./stick.schema');
 
-const DATABASE_URL = process.env.DATABASE_URL;
+const DATABASE_URL = process.env.NODE_ENV === 'test'
+  ? 'sqlite:memory'
+  : process.env.DATABASE_URL;
 
 const sequelizeDatabase = new Sequelize(DATABASE_URL);
 
 const CymbalModel = cymbalSchema(sequelizeDatabase, DataTypes);
-const StickModel = stickSchema(sequelizeDatabase,DataTypes);
+const StickModel = stickSchema(sequelizeDatabase, DataTypes);
 
-module.exports = { sequelizeDatabase, CymbalModel, StickModel};
+module.exports = { sequelizeDatabase, CymbalModel, StickModel };
