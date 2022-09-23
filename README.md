@@ -8,9 +8,8 @@ Concise Description of why this app exists
 
 ## Links and Resources
 
-- [ci/cd](http://xyz.com) (GitHub Actions)
-- [back-end server url](http://xyz.com) (when applicable)
-- [front-end application](http://xyz.com) (when applicable)
+- [ci/cd](https://github.com/DSFrey/basic-api-server/actions) (GitHub Actions)
+- [back-end server url](https://dsfrey-basic-api-server.herokuapp.com/)
 
 ## Setup
 
@@ -21,24 +20,9 @@ Concise Description of why this app exists
 
 ### How to initialize/run your application (where applicable)
 
-- start by running `npm run db:config`
+- Initialize by running `npm run db:config` and `db:create`
 
-- `db:create`
-
-- `npm start`
-
-### How to use your library (where applicable)
-
-### Features / Routes
-
-- Feature One: Details of feature
-- GET : `/hello` - specific route to hit
-
-### Tests
-
-- How do you run tests?
-- Any tests of note?
-- Describe any tests that you did not complete, skipped, etc
+- Start the server by running `npm start`
 
 ### UML
 
